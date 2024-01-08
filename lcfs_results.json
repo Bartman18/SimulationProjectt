@@ -1,0 +1,71 @@
+{
+  "processes": [
+    {
+      "process_id": 3,
+      "arrival_time": 10,
+      "waiting_time": 0,
+      "finish_time": 17
+    },
+    {
+      "process_id": 10,
+      "arrival_time": 9,
+      "waiting_time": 8,
+      "finish_time": 26
+    },
+    {
+      "process_id": 8,
+      "arrival_time": 9,
+      "waiting_time": 17,
+      "finish_time": 34
+    },
+    {
+      "process_id": 6,
+      "arrival_time": 9,
+      "waiting_time": 25,
+      "finish_time": 44
+    },
+    {
+      "process_id": 5,
+      "arrival_time": 9,
+      "waiting_time": 35,
+      "finish_time": 53
+    },
+    {
+      "process_id": 2,
+      "arrival_time": 5,
+      "waiting_time": 48,
+      "finish_time": 59
+    },
+    {
+      "process_id": 7,
+      "arrival_time": 3,
+      "waiting_time": 56,
+      "finish_time": 64
+    },
+    {
+      "process_id": 4,
+      "arrival_time": 3,
+      "waiting_time": 61,
+      "finish_time": 66
+    },
+    {
+      "process_id": 1,
+      "arrival_time": 3,
+      "waiting_time": 63,
+      "finish_time": 68
+    },
+    {
+      "process_id": 9,
+      "arrival_time": 1,
+      "waiting_time": 67,
+      "finish_time": 71
+    }
+  ],
+  "metrics": {
+    "average_waiting_time": 38.0,
+    "average_finish_time": 50.2,
+    "total_execution_time": 61,
+    "total_waiting_time": 380,
+    "total_turnaround_time": 441
+  }
+}

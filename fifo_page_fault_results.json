@@ -1,0 +1,6 @@
+{
+  "algorithm": "fifo",
+  "frame_size": 3,
+  "page_faults": 6,
+  "hits": 4
+}
