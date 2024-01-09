@@ -40,4 +40,4 @@ Python 3.11.2
 
 ---
 
-*Note: Make sure you have Python 3.11.2 installed, and the required libraries are installed using the provided `requirements.txt` file.*
+*Note: Make sure you have Python 3.11.2 installed, and the required libraries are installed
