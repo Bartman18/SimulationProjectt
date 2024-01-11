@@ -8,7 +8,7 @@ Python 3.11.2
 1. **Clone the Repository**
 
     ```bash
-    git clone <repository_url>
+    git clone https://github.com/Bartman18/SimulationProjectt
     ```
 
 2. **Open the Project and Install Required Libraries**
