@@ -116,4 +116,34 @@ class Main:
         ResultsSaver.save_results_to_json("lcfs_results.json", processes)
 
     @staticmethod
-    def FifoAnd
+    def FifoAndLru():
+        """
+        Symuluje algorytmy zastępowania stron: FIFO (First-In, First-Out) i LRU (Least Recently Used).
+        Użytkownik jest pytany o liczbę ramek i stron, a następnie symulowane są oba algorytmy zastępowania stron.
+        Wyniki są zapisywane do plików JSON.
+        """
+        # Pobranie od użytkownika liczby ramek i stron
+        frames = int(input("Enter the number of frames: "))
+        num_pages = int(input("Enter the number of pages: "))
+
+        # Utworzenie instancji klasy Page
+        page_instance = Page(frames)
+
+        # Generowanie losowego strumienia stron za pomocą instancji
+        page_stream = page_instance.generate_random_stream(num_pages)
+
+        # Uruchomienie algorytmu FIFO
+        fifo_algorithm = FIFO(frames)
+        fifo_algorithm.run(page_stream)
+        fifo_algorithm.save_results_to_json("fifo")
+
+        # Zresetowanie dla algorytmu LRU
+        fifo_algorithm.reset()
+
+        # Uruchomienie algorytmu LRU
+        lru_algorithm = LRU(frames)
+        lru_algorithm.run(page_stream)
+        lru_algorithm.save_results_to_json("lru")
+
+if __name__ == "__main__":
+    Main.run()
