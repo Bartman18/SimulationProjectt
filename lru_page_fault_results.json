@@ -1,6 +1,6 @@
 {
   "algorithm": "lru",
   "frame_size": 3,
-  "page_faults": 6,
-  "hits": 4
+  "page_faults": 8,
+  "hits": 2
 }
